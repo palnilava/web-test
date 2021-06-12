@@ -1,0 +1,263 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+.navbar .logo img{
+    background-size: cover;
+    background-repeat: no-repeat;
+ 
+}
+.search{
+    margin-left: 14px ;
+}
+
+nav {
+    flex: 1;
+    text-align: right;
+}
+
+.navlist {
+    display: inline-block;
+    list-style: none;
+    margin-right: 71px;
+}
+
+.navlist li {
+    display: inline-block;
+    margin: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    /* font-family: 'Nunito', sans-serif; */
+    font-family: 'Baloo Bhai 2', cursive;
+}
+.cart-logo{
+    transition: transform 0.9s;  
+}
+.cart-logo:hover{
+    transform: rotate(360deg);  
+}
+
+p {
+    color: white;
+    font-family: 'Nunito', sans-serif;
+    font-size: 16px;
+}
+
+.container {
+    max-width: 1346px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    height: 527px;
+}
+
+.col-2 {
+    flex-basis: 50%;
+    min-width: 300px;
+}
+
+.col-2 img {
+    max-width: 104%;
+    height: 522px;
+    padding-left: 164px;
+    transform: rotate(29deg);
+}
+
+.col-2 h1 {
+    font-size: 66px;
+    line-height: 50px;
+    margin: 25px 0;
+    font-family: 'Baloo Bhai 2', cursive;
+    color: white;
+}
+
+.burg{
+    position: absolute;
+    cursor: pointer;
+    right: 4%;
+    top: 66px;
+    border: 3px solid #1e161687;
+    border-radius: 33px;
+    padding: 5px;
+     display: none;
+
+}
+.burg-line {
+    width: 23px;
+    background-color: white;
+    height: 2px;
+    margin: 5px 3px;
+    border-radius: 142px;
+    /* padding: 1px 13px;*/
+}
+
+body{
+    /* content: ""; */
+    /* background-image: url("back.jpeg"); */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: black;
+    /* <img src="back.jpeg"   alt="" srcset="">; */
+    height: 629px;
+}
+/* section */
+
+/* .categories {
+    margin: 352px 0;
+} */
+
+.col-3 {
+    flex-basis: 33%;
+    min-width: 250px;
+    margin-bottom: 30px;
+}
+
+.col-3 img {
+    width: 120%;
+    height: 394px;
+}
+h3{
+    color: white;
+    font-family: 'Baloo Bhai 2', cursive;
+}
+
+
+h4 {
+    color:red;
+    font-weight: normal;
+    /* text-align: center; */
+    font-family: 'Baloo Bhai 2', cursive;
+    font-size: 21px;
+}
+
+/* .col-4 p {
+    font-size: 14px;
+} */
+
+
+.col-4:hover {
+    transform: translateY(-5px);
+}
+
+h5{
+    color: rgb(190, 207, 228);
+    text-align: center;
+    font-family: 'Baloo Bhai 2', cursive;
+    font-size: 18px;
+    margin-bottom: 14px;
+}
+.section{
+    margin-top: 33px;
+    /* margin-left: -4px; */
+    margin-bottom: 35px;
+}
+#col-3{
+    line-height: 8px;
+}
+.scroll-img {
+    margin-bottom: 61px;
+    text-align: right;
+
+}
+.scroll-img img{
+    height: 30px;
+    width: 30px;
+    margin: 9px;
+    border-radius: 68px;
+}
+
+.circle img{
+    height: 16px;
+    width: 16px;
+}
+
+.circle{
+text-align: -webkit-center;
+    margin: 23px;
+}
+
+
+@media only screen and (max-width:1240px) {
+    
+    .nav-h{
+        height: 172px;
+      }
+      .vis{
+          opacity: 0; 
+          transition: all 0.75s ease-in-out;
+      }
+
+      .burg{
+        display: block;
+    }
+    .navlist{
+        display: flex;
+        flex-direction: column;
+        line-height: 11px;
+        padding: 86px 0px;
+        width: 100%;
+        margin-top: 42px;
+        margin-bottom: 16px;
+    }
+    .row{
+        flex-direction: column;
+        margin-top: 173px;
+        flex-wrap: nowrap;
+    }
+
+    .container{
+        width: 100%;
+          /* max-width: 0px; */
+        margin: auto;
+      
+    }
+
+    .col-2{
+        flex-basis: 50%;
+        text-align: center;
+        margin-top: 44px;
+    }
+    .col-2 img {
+         /* max-width: 0px; */
+        height: 0px;
+        padding-left: 0px;
+        height: auto;
+        width: 88%;
+    }
+
+    .categories{
+        margin: 489px 0;
+    }
+    #col img{
+        width: 100%;
+        margin: auto;
+        height: auto;
+        padding-left: 45px;
+    }
+    p .des{
+        margin-left: 27px;
+        margin-right: 23px;
+    }
+
+    p .intro{
+        margin-left: 26px;
+        margin-right: 26px;
+    }
+} 
