@@ -41,7 +41,7 @@
                 </nav>
 
             </div>
-            <div class="row">
+            <div class="row row-h">
                 <div class="col-2">
                     <p class="qoute"> THE BEST CHOICE</p>
                     <h1>Beats Studio Wireless </h1>
@@ -92,17 +92,19 @@
     </div>
 
 
-     <script>
+      <script>
         burg= document.querySelector('.burg')
         navbar= document.querySelector('.navbar')
         navlist= document.querySelector('.navlist')
-    
+        row= document.querySelector('.row')
         burg.addEventListener('click',()=>{
             navlist.classList.toggle('vis');
+            navlist.classList.toggle('nav-h-back');
             navbar.classList.toggle('nav-h');
+            row.classList.toggle('row-h');
         })
         
-    </script> 
+    </script>
 </body>
 
 </html>
