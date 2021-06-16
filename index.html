@@ -18,14 +18,14 @@
 <body>
     <!-- <div class="header"> -->
         <div class="container">
+           
             <div class="navbar">
-             
-
                 <div class="logo">
                     <img src="back.jpeg" height="30px" width="30px" alt="" srcset="">
                 </div>
                 <img src="search.jpeg" class="search" height="30px" width="30px" alt="" srcset="">
                 <nav >
+                    
                     <ul class="navlist vis  nav-h">
                         <li><a href="#">About Us</a></li>
                         <li><a href="#">Models</a></li>
@@ -39,9 +39,10 @@
                         <div class="burg-line"></div>
                     </div>
                 </nav>
+                
 
             </div>
-            <div class="row row-h">
+            <div class="row">
                 <div class="col-2">
                     <p class="qoute"> THE BEST CHOICE</p>
                     <h1>Beats Studio Wireless </h1>
@@ -61,7 +62,7 @@
     <div class="categories">
         <div class="container">
 
-            <div class="row">
+            <div class="row row-h">
                 <div class="col-3" id="col">
                     <img src="dj.jpg" alt="" srcset="">
                 </div>
@@ -92,7 +93,7 @@
     </div>
 
 
-      <script>
+     <script>
         burg= document.querySelector('.burg')
         navbar= document.querySelector('.navbar')
         navlist= document.querySelector('.navlist')
@@ -104,7 +105,117 @@
             row.classList.toggle('row-h');
         })
         
-    </script>
+    </script> 
+</body>
+
+</html><!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beat Studio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@600&display=swap" rel="stylesheet">
+     <script src="resp.js"></script>
+</head>
+
+<body>
+    <!-- <div class="header"> -->
+        <div class="container">
+           
+            <div class="navbar">
+                <div class="logo">
+                    <img src="back.jpeg" height="30px" width="30px" alt="" srcset="">
+                </div>
+                <img src="search.jpeg" class="search" height="30px" width="30px" alt="" srcset="">
+                <nav >
+                    
+                    <ul class="navlist vis  nav-h">
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Models</a></li>
+                        <li><a href="#">Reviews</a></li>
+                        <li><a href="#">Add Cart </a></li>
+
+                    </ul>
+                    <div class="burg">
+                        <div class="burg-line"></div>
+                        <div class="burg-line"></div>
+                        <div class="burg-line"></div>
+                    </div>
+                </nav>
+                
+
+            </div>
+            <div class="row">
+                <div class="col-2">
+                    <p class="qoute"> THE BEST CHOICE</p>
+                    <h1>Beats Studio Wireless </h1>
+                    <p class="intro">Almost before we knew it, we had left the <br>
+                        ground. I watched the storm, so beautiful yet <br>terrific</p>
+                    <!-- <a href="" class="butt">Visit Now<span>&#8594;</span> </a> -->
+                    <!-- <a href="" class="butt">&#8795;follow Us!</a> -->
+                </div>
+                <div class="col-2">
+                    <img src="halt.jpeg" alt="" srcset="">
+                </div>
+            </div>
+
+        </div>
+    <!-- </div> -->
+    <!-- Section -->
+    <div class="categories">
+        <div class="container">
+
+            <div class="row row-h">
+                <div class="col-3" id="col">
+                    <img src="dj.jpg" alt="" srcset="">
+                </div>
+                <div class="col-3">
+                    <h4>Mobile App</h4>
+                    <p class="section">Mist enveloped the ship three hours <br> out from port.</p>
+                    <h3>Download for iOS and Android</h3>
+                    <p id="col-3">~~~~~~~~~~~~~~~~~~~~~ <br>~~~~~~~~~~~~~~~~~~~~~</p>
+                </div>
+                <div class="col-3">
+                    <div class="scroll-img">
+                        <img src="scroll left.jpeg" width="30px" height="30px" alt="" srcset="">
+                        <img src="scroll right.jpeg"  width="30px" height="30px" alt="" srcset="">
+                    </div>
+                    <h5>Use it Everywhere</h5>
+                    <p class="des">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam praesentium a enim sequi,
+                        repellat dolorem, iure hic laborum quidem tempore consequuntur? Exercitationem minima libero
+                        veniam, doloribus velit totam dolores voluptatem!</p>
+                        <div class="circle">
+                            <img src="circle.png" alt="" srcset="">
+                            <img src="circle hollow.png" alt="" srcset="">
+                            <img src="circle hollow.png" alt="" srcset="">
+                        </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+     <script>
+        burg= document.querySelector('.burg')
+        navbar= document.querySelector('.navbar')
+        navlist= document.querySelector('.navlist')
+        row= document.querySelector('.row')
+        burg.addEventListener('click',()=>{
+            navlist.classList.toggle('vis');
+            navlist.classList.toggle('nav-h-back');
+            navbar.classList.toggle('nav-h');
+            row.classList.toggle('row-h');
+        })
+        
+    </script> 
 </body>
 
 </html>
