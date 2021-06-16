@@ -8,6 +8,7 @@
     display: flex;
     align-items: center;
     padding: 20px;
+    height: 160px;
 }
 .navbar .logo img{
     background-size: cover;
@@ -21,18 +22,21 @@
 nav {
     flex: 1;
     text-align: right;
+    transition: all 0.75s ease-in-out;
 }
 
 .navlist {
     display: inline-block;
     list-style: none;
     margin-right: 71px;
+    transition: all 0.75s ease-in-out;
 }
 
 .navlist li {
     display: inline-block;
     margin: 20px;
 }
+
 
 a {
     text-decoration: none;
@@ -66,6 +70,7 @@ p {
     flex-wrap: wrap;
     justify-content: space-around;
     height: 527px;
+    transition: all 0.75s ease-in-out;
 }
 
 .col-2 {
@@ -198,10 +203,15 @@ text-align: -webkit-center;
     
     .nav-h{
         height: 172px;
+        transition: all 0.75s ease-in-out;
       }
       .vis{
           opacity: 0; 
           transition: all 0.75s ease-in-out;
+      }
+      .row-h{
+        margin-top: 173px;
+        transition: all 0.75s ease-in-out;
       }
 
       .burg{
@@ -215,10 +225,11 @@ text-align: -webkit-center;
         width: 100%;
         margin-top: 42px;
         margin-bottom: 16px;
-    }
+    } 
+
     .row{
         flex-direction: column;
-        margin-top: 173px;
+        /* margin-top: 173px; */
         flex-wrap: nowrap;
     }
 
